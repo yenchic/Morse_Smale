@@ -1,7 +1,7 @@
 # Data Analysis using the Morse-Smale Complex
 - Paper reference: Chen, Yen-Chi, Christopher R. Genovese, and Larry Wasserman. "Statistical Inference using the Morse-Smale Complex." arXiv preprint arXiv:1506.08826 (2015).
-- `MSHD.R`: the main script for the method.
-- `example.R`: an example (used in the paper) for applying MSHD.
+- `MSHD.R`: The main script for the method.
+- `example.R`: An example (used in the paper) for applying MSHD.
 
 ## MSHD.R
 
@@ -16,7 +16,7 @@
   - pLevel: The persistent level used in $MSR$ package.
   - knn: The number of nearest neighbor used in $MSR$ package.
 - Output:
-  - A S4 object of class "MSHD". A list consisting:
+  - An S4 object of class "MSHD". A list consisting:
     - grids: The input grid points.
     - grids.values: The input grid values.
     - label.cell: The cell label for each grid point.
@@ -60,7 +60,7 @@
   - pLevel: The persistent level used in `MSR` package.
   - knn: The number of nearest neighbor used in `MSR` package.
 - Output:
-  - A S4 object of class "MSHD". A list consisting:
+  - An S4 object of class "MSHD". A list consisting:
     - cell1.data: The sample from 1st group for constructing Morse-Smale cells.
     - cell2.data: The sample from 2nd group for constructing Morse-Smale cells.
     - test1.data: The sample from 1st group for conducting energy test.
