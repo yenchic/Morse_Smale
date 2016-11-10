@@ -47,3 +47,28 @@
     - cell.vis: The visualization coordinates for each cell.
     - cell.edgepoints: Number of edge points for a pair of cell.
     - cell.size: The size (number of grid points) for each cell, including total size, significantly positive grid points, and significantly negative grid points.
+
+
+### MSE.test
+`MSEtest = function(data1, data2, grids, h=NULL, pLevel=0.01, knn=3*ncol(grids))`
+- Morse-Smale Two Sample Test using Energy Statistics and KDE.
+- Inputs:
+  - data1: The first group of data
+  - data2: The second group of data
+  - grids: The grid points where the density will be evaluated
+  - h: The smoothing parameter.
+  - pLevel: The persistent level used in `MSR` package.
+  - knn: The number of nearest neighbor used in `MSR` package.
+- Output:
+  - A S4 object of class "MSHD". A list consisting:
+    - cell1.data: The sample from 1st group for constructing Morse-Smale cells.
+    - cell2.data: The sample from 2nd group for constructing Morse-Smale cells.
+    - test1.data: The sample from 1st group for conducting energy test.
+    - test2.data: The sample from 2nd group for conducting energy test.
+    - grids: The grid points.
+    - grids.density: A matrix containing the density evaluated at the grid points. First column is the density from cell1 data; second column is from cell2 data; and the last column is the density difference.
+    - labels: A list consisting of cell labels for grids, cell1, cell2, test1, and test2.
+    - p.values: The p.values for each cell. The value is \emph{NA} if there is only one point from either test1 or test2 for this cell.
+    - bandwidth: The smoothing bandwidth used to estimate density.
+
+
