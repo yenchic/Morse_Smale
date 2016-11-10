@@ -25,32 +25,25 @@
 
 ### cell.plot
 `cell.plot = function(x, lv.pos = NULL, lv.neg = NULL, grid.width = NULL, r_circle = 1, col.cell = "limegreen", col.cell.filled = "limegreen", col.edge = "brown", col.pie = c("dodgerblue", "red"), lwd.cell = 4, lwd.edge = 10, use.legend=T)`
-
-#' Visualizing a high dimensional function using Morse-Smale cells.
-#' @param x An MSHD object.
-#' @param lv.pos The threshold for claiming a grid point is significantly high.
-#' @param lv.neg The threshold for claiming a grid point is significantly low.
-#' @param grid.width The grid width that will be used to compute the number of grid
-#' points that two cells share.
-#' @param r_circle The visualization radius for each cell.
-#' @param col.cell Color for the cell (boundaries of the circle).
-#' @param col.cell.filled The filled-in color for the cell.
-#' @param col.edge Color for the edge.
-#' @param col.pie Color for significantly positive and negative region.
-#' @param lwd.cell Width of the circle for the cell.
-#' @param lwd.edge Width for the edges.
-#' @param cex.cell.txt `txt' for the text label for each cell.
-#' @param pos.cell.txt `pos' for the text label for each cell.
-#' @param offset.cell.txt `offset' for the text label for each cell.
-#' @param use.legend To display the legend or not.
-#' 
-#' @return A plot for visualization using cells and a list consisting 
-#' \item{cell.vis}
-#' The visualization coordinates for each cell.
-#' \item{cell.edgepoints}
-#' Number of edge points for a pair of cell.
-#' \item{cell.size}
-#' The size (number of grid points) for each cell, including total size,
-#' significantly positive grid points, and significantly negative grid points.
-#' 
-#' @export
+- Visualizing a high dimensional function using Morse-Smale cells.
+- Inputs:
+  - x: An MSHD object.
+  - lv.pos: The threshold for claiming a grid point is significantly high.
+  - lv.neg: The threshold for claiming a grid point is significantly low.
+  - grid.width: The grid width that will be used to compute the number of grid points that two cells share.
+  - r_circle: The visualization radius for each cell.
+  - col.cell: Color for the cell (boundaries of the circle).
+  - col.cell.filled: The filled-in color for the cell.
+  - col.edge: Color for the edge.
+  - col.pie: Color for significantly positive and negative region.
+  - lwd.cell: Width of the circle for the cell.
+  - lwd.edge: Width for the edges.
+  - cex.cell.txt: `txt` of the text label for each cell.
+  - pos.cell.txt: `pos` of the text label for each cell.
+  - offset.cell.txt: `offset` of the text label for each cell.
+  - use.legend: To display the legend or not.
+- Output:
+  - A plot for visualization using cells and a list consisting:
+    - cell.vis: The visualization coordinates for each cell.
+    - cell.edgepoints: Number of edge points for a pair of cell.
+    - cell.size: The size (number of grid points) for each cell, including total size, significantly positive grid points, and significantly negative grid points.
