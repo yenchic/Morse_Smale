@@ -49,7 +49,7 @@
     - cell.size: The size (number of grid points) for each cell, including total size, significantly positive grid points, and significantly negative grid points.
 
 
-### MSE.test
+### MSEtest
 `MSEtest = function(data1, data2, grids, h=NULL, pLevel=0.01, knn=3*ncol(grids))`
 - Morse-Smale Two Sample Test using Energy Statistics and KDE.
 - Inputs:
