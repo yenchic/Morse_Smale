@@ -24,14 +24,7 @@
     - beta: The regression coefficients for linear approximation for the high dimensional function.
 
 ### cell.plot
-`cell.plot = function(x, lv.pos = NULL, lv.neg = NULL, grid.width = NULL, 
-                     r_circle = 1, 
-                     col.cell = "limegreen", col.cell.filled = "limegreen",
-                     col.edge = "brown", 
-                     col.pie = c("dodgerblue", "red"), 
-                     lwd.cell = 4, lwd.edge = 10, 
-                     use.legend=T
-                     )`
+`cell.plot = function(x, lv.pos = NULL, lv.neg = NULL, grid.width = NULL, r_circle = 1, col.cell = "limegreen", col.cell.filled = "limegreen", col.edge = "brown", col.pie = c("dodgerblue", "red"), lwd.cell = 4, lwd.edge = 10, use.legend=T)`
 
 #' Visualizing a high dimensional function using Morse-Smale cells.
 #' @param x An MSHD object.
